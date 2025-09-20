@@ -11,7 +11,7 @@ body{
     align-items: center;
     gap: 30px;
     min-height: 100vh;
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(37, 37, 37);
 }
 
 .main-container{
@@ -40,9 +40,8 @@ body{
             /* background-color: rgb(115, 0, 255); */
             color: rgb(253, 250, 255);
             span i{
-                transform: rotate(30deg);
+                transform: rotate(45deg);
                 transition: transform 0.3s ease;
-                color: red;
             }
         }
         .answer{
@@ -58,7 +57,6 @@ body{
             }
         }
         .show{
-            /* display: block; */
             max-height: 200px;
         }
     }

@@ -5,26 +5,26 @@ class Accordion {
     render (container) {
         const mainContainer = document.createElement("div");
         mainContainer.className = "main-container";
-        for (let key in this.questions) {
+        for (let question in this.questions) {
             const wrapper = document.createElement("div");
             wrapper.className = "section-wrapper";
             // Questions
-            const question = document.createElement("div");
-            question.className = "question";
-            question.innerHTML = `<p>${key}</p> <span><i class="bi bi-chevron-down"></i></span>`;
+            const questionWrapper = document.createElement("div");
+            questionWrapper.className = "question";
+            questionWrapper.innerHTML = `<p>${question}</p> <span><i class="bi bi-chevron-down"></i></span>`;
             // Answers
             const answer = document.createElement("div");
             answer.className = "answer"
-            answer.innerHTML = `<p>${this.questions[key]}</p>`;
+            answer.innerHTML = `<p>${this.questions[question]}</p>`;
             // attach events
-            question.addEventListener("click", () => {
-                question.nextElementSibling.classList.toggle("show");
-                question.classList.toggle("active");
+            questionWrapper.addEventListener("click", () => {
+                questionWrapper.nextElementSibling.classList.toggle("show");
+                questionWrapper.classList.toggle("active");
             })
             // append
-            wrapper.append(question);
+            wrapper.append(questionWrapper);
             wrapper.append(answer);
-            mainContainer.append(wrapper)
+            mainContainer.append(wrapper);
         }
         container.append(mainContainer);
     }
