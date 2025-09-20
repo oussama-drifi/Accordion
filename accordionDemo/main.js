@@ -20,7 +20,7 @@ class Accordion {
             questionWrapper.addEventListener("click", () => {
                 questionWrapper.nextElementSibling.classList.toggle("show");
                 questionWrapper.classList.toggle("active");
-            })
+            });
             // append
             wrapper.append(questionWrapper);
             wrapper.append(answer);
@@ -33,9 +33,9 @@ class Accordion {
 
 
 const accordion = new Accordion({
-    "What is your name?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit.",
-    "How much do you make a year?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit.",
-    "Which country you would like to visit?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit.",
-    "How much money do you wanna get paid?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit."
+    "What is your favourite programming language?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit.",
+    "How many years of experience do you have?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit.",
+    "Which company would you like to work for?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit.",
+    "What are your salary expectations?" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos quae cum, nulla sed dolor assumenda iure? Omnis aspernatur necessitatibus odit, dignissimos minima, maiores repellat repellendus obcaecati illum commodi fugit."
 })
 accordion.render(document.body);

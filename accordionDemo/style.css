@@ -21,9 +21,6 @@ body{
     gap: 10px;
 
     .section-wrapper{
-        /* background-color: rgba(255, 255, 255, 0); */
-        /* border-radius: 15px; */
-        /* border: 1.5px solid #eee; */
         border-bottom: 1.5px solid #b4b4b4;
         overflow: hidden;
         color: #b4b4b4;
@@ -32,12 +29,10 @@ body{
             display: flex;
             justify-content: space-between;
             padding: 10px 4px;
-            /* border-radius: 15px; */
             cursor: pointer;
-            transition-duration: 0.2s;
+            transition: all 0.2s ease;
         }
         .active{
-            /* background-color: rgb(115, 0, 255); */
             color: rgb(253, 250, 255);
             span i{
                 transform: rotate(45deg);
@@ -45,11 +40,10 @@ body{
             }
         }
         .answer{
-            /* background-color: white; */
             overflow: hidden;
             max-height: 0;
             padding: 0;
-            transition: all 0.3s ease;
+            transition: max-height 0.3s ease;
             
             & p{
                 padding: 10px 4px;
