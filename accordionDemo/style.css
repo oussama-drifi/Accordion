@@ -34,8 +34,8 @@ body{
         }
         .active{
             color: rgb(253, 250, 255);
-            span i{
-                transform: rotate(45deg);
+            span {
+                transform: rotate(180deg);
                 transition: transform 0.3s ease;
             }
         }
