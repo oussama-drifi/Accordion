@@ -31,7 +31,7 @@ body{
         .question{
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
+            padding: 10px 4px;
             /* border-radius: 15px; */
             cursor: pointer;
             transition-duration: 0.2s;
@@ -40,8 +40,9 @@ body{
             /* background-color: rgb(115, 0, 255); */
             color: rgb(253, 250, 255);
             span i{
-                transform: rotate(45deg);
+                transform: rotate(30deg);
                 transition: transform 0.3s ease;
+                color: red;
             }
         }
         .answer{
@@ -52,7 +53,7 @@ body{
             transition: all 0.3s ease;
             
             & p{
-                padding: 10px 0;
+                padding: 10px 4px;
                 border-radius: 15px;
             }
         }

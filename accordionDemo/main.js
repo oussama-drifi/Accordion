@@ -11,7 +11,7 @@ class Accordion {
             // Questions
             const question = document.createElement("div");
             question.className = "question";
-            question.innerHTML = `<p>${key}</p> <span><i class="fa-solid fa-plus"></i></span>`;
+            question.innerHTML = `<p>${key}</p> <span><i class="bi bi-chevron-down"></i></span>`;
             // Answers
             const answer = document.createElement("div");
             answer.className = "answer"
