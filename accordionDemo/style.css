@@ -1,29 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: poppins, arial;
-}
-
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    min-height: 100vh;
     background-color: rgb(37, 37, 37);
 }
 
 .main-container{
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 
-    .section-wrapper{
+    .question-container{
         border-bottom: 1.5px solid #b4b4b4;
         overflow: hidden;
         color: #b4b4b4;
+
+        &:last-child{
+            border: none;
+        }
 
         .question{
             display: flex;
