@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(tree C:\\\\Accordion /A /F | Where-Object { $_ -notmatch '\\\\.git' })",
+      "Bash(Remove-Item -Recurse -Force \"c:\\\\Accordion\\\\accordionDemo\")"
+    ]
+  }
+}
